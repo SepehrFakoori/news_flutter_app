@@ -7,6 +7,7 @@ import 'package:news_flutter_application/bloc/home/home_event.dart';
 import 'package:news_flutter_application/bloc/home/home_state.dart';
 import 'package:news_flutter_application/data/models/news_article.dart';
 import 'package:news_flutter_application/screens/news_screen.dart';
+import 'package:news_flutter_application/util/extension/string_extension.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -195,7 +196,7 @@ class _SliderView extends StatelessWidget {
                     ),
                     const SizedBox(width: 8),
                     Text(
-                      newsArticle.publishedAt.toString(),
+                      newsArticle.publishedAt!.toCustomFormat(),
                       style: const TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
@@ -257,8 +258,8 @@ class _CardContainerState extends State<CardContainer> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => NewsScreen(widget.newsArticle)));
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => NewsScreen(widget.newsArticle)));
       },
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 20),
@@ -320,7 +321,7 @@ class _CardContainerState extends State<CardContainer> {
                       ),
                       const SizedBox(width: 5),
                       Text(
-                        widget.newsArticle.publishedAt!,
+                        widget.newsArticle.publishedAt!.toCustomFormat(),
                         style: const TextStyle(fontWeight: FontWeight.bold),
                       ),
                     ],
