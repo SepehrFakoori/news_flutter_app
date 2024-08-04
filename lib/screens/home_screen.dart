@@ -309,6 +309,7 @@ class _CardContainerState extends State<CardContainer> {
                     child: Text(
                       widget.newsArticle.title!.toString(),
                       maxLines: 2,
+                      textAlign: TextAlign.justify,
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(
                           fontSize: 16, fontWeight: FontWeight.bold),
@@ -316,6 +317,7 @@ class _CardContainerState extends State<CardContainer> {
                   ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Container(
                         width: 30,
