@@ -144,10 +144,16 @@ class _SliderView extends StatelessWidget {
             borderRadius: BorderRadius.circular(20.0),
             child: SizedBox(
               width: MediaQuery.sizeOf(context).width,
-              child: Image.asset(
-                'assets/images/news_image.jpg',
-                fit: BoxFit.cover,
-              ),
+              height: 210,
+              child: newsArticle.urlToImage == null
+                  ? Image.asset(
+                      'assets/images/news_image.jpg',
+                      fit: BoxFit.cover,
+                    )
+                  : CachedNetworkImage(
+                      imageUrl: newsArticle.urlToImage!,
+                      fit: BoxFit.fill,
+                    ),
             ),
           ),
           Positioned(
