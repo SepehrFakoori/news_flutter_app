@@ -1,16 +1,16 @@
-# news_flutter_application
+# News Application using Flutter + BloC
 
-A new Flutter project.
+## Descriptions
+👋 Hey there!
 
-## Getting Started
+As part of my Flutter course, I developed an app for some practice. I used Bloc as statemanager and Dio requests. Overall, I'm pretty excited about how this project turned out and I hope you will enjoy it too! ❤️
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ScreenShots
+<br />
+<div> 
+  &emsp;&emsp;&emsp;&emsp;
+  <img src="https://github.com/SepehrFakoori/news_flutter_app/blob/1374cef0dea2fd121f1effd9a8d2d684e301ea91/images/home_screen.png" alt="Home Screen" width="180">
+    &emsp;&emsp;&emsp;&emsp;
+  <img src="https://github.com/SepehrFakoori/news_flutter_app/blob/1374cef0dea2fd121f1effd9a8d2d684e301ea91/images/news_screen.png" alt="News Screen" width="180">
+</div>
+<br />
